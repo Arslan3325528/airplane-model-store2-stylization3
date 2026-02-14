@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types';
-import css from "./PlanesList.module.css";
- 
-// import Planes from './PlanesWOSyle'; //! без стилізації
-// import Planes from './PlanesBuiltInStyles'; //! вбудовані стилі
-// import Planes from './PlanesVanillaCSS'; //! ванільний CSS
+
+import css from "./PlanesList.module.css"; //! CSS-модулі
+import { PlanesGallery, PlanesItem } from './PlanesList.styled'; //! Emotion
 
 // import { Planes } from '../Planes/Planes.jsx'; //! CSS-модулі
 import { Planes } from '@/components/Planes/Planes.jsx'; //! CSS-модулі --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
@@ -13,9 +11,15 @@ import { getBgColorBuiltInStyles, getBgColorVanillaCSS, getBgColorCSSModule } fr
 
 export function PlanesList({ items }) {
     return (
-        <ul className={css.planesList}>
+        //! Emotion
+        <PlanesGallery>
+        {/* //! CSS-модулі */}
+        {/* <ul className={css.planesList}> */}
             {items.map(item => 
-                <li
+                //! Emotion
+                <PlanesItem key={item.id}>
+                {/*//! CSS-модулі */}
+                {/* <li
                     //todo: var.1 та var.2
                     // className={getBgColorVanillaCSS(item.info.year).join(" ")}
                     //todo: var.1.1 та var.2.1 - використання бібліотеки clsx
@@ -24,7 +28,7 @@ export function PlanesList({ items }) {
                     // className={css.planesItem}
                     className={css[getBgColorCSSModule(item.info.year)]}
                     key={item.id}
-                >
+                > */}
                     <Planes
                         urlMain={item.url.main}
                         urlPromotional={item.url.promotional}
@@ -40,9 +44,15 @@ export function PlanesList({ items }) {
                         manufacturingStart={item.manufacturing.start}
                         manufacturingEnd={item.manufacturing.end}
                     />
-                </li>
+                {/*//! CSS-модулі */}
+                {/* </li> */}
+                {/*//! Emotion */}
+                </PlanesItem >
             )}
-        </ul>
+        {/*//! CSS-модулі */}
+        {/* </ul> */}
+        {/*//! Emotion */}
+        </PlanesGallery >
     );
 };
 
