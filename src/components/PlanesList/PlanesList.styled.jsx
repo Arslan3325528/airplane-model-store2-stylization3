@@ -1,8 +1,10 @@
 import styled from '@emotion/styled';
 
 export const PlanesGallery = styled.ul`
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 99vw;
+    min-width: 572px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(540px, auto));
