@@ -203,4 +203,34 @@
       "end": "1952-01-01T00:00:00"
     }
   }
+  ,
+  {
+    "id": "id-8",
+    "url": {
+      "main": "https://upload.wikimedia.org/wikipedia/commons/9/90/F-14_Tomcat_VF-2.jpg",
+      "promotional": "hhttps://lh3.googleusercontent.com/pw/AP1GczNyRJlWO2ki4tSpbCXhowMOcD6DCnUOqdDbrrMuObFy8W7mv6uKdL8K_HUO2N7OlNQaN2U5BDQTuatfMaaVjuhD9s9rJYSCq_tZQAxaQ-ydFSJ8EwF8rPsFPoZvJXyI60CKHc_YSo4y17xUPf0yiSr_=w913-h847-s-no-gm?authuser=0",
+      "actual": [
+        "/airplane-model-store2-stylization3/images/planes-actual/f-14_black.jpg",
+        "/airplane-model-store2-stylization3/images/planes-actual/f-14_white.jpg",
+        "/airplane-model-store2-stylization3/images/planes-actual/f-14_white.jpg",
+        "/airplane-model-store2-stylization3/images/planes-actual/f-14_black.jpg"
+      ]
+    },
+    "name": {
+      "brief": "F-14",
+      "full": "Grumman F-14 Tomcat",
+      "nickname": "Котяра, Ловелас,  («Tomcat»)"
+    },
+    "info": {
+      "year": 1970,
+      "country": "США",
+      "type": "Палубний винищувач-перехоплювач",
+      "price": "$60–70 млн",
+      "description": "Двомісний реактивний палубний винищувач-перехоплювач четвертого покоління з крилом змінної стріловидності, здатний завоювати повну повітряну перевагу в безпосередній близькості від авіанесучих кораблів, з яких передбачалося використовувати ці літаки, а також повинен був бути здатний завдавати ударів по тактичним наземним і надводним цілям"
+    },
+    "manufacturing": {
+      "start": "1974-01-01T00:00:00",
+      "end": "1992-01-01T00:00:00"
+    }
+  }
 ]
