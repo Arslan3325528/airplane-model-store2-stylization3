@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import css from "./Section.module.css"; //! CSS-модулі
+// import css from "./Section.module.css"; //! CSS-модулі
+import { Title } from './Section.styled'; //! Emotion
 
 export function Section({ title, children }) {
   //! Перевірка режимів: development або prodaction
@@ -11,7 +12,9 @@ export function Section({ title, children }) {
       {/* //! CSS-модулі з композицією класів */}
       {/* {title && <h2 className={`${css.title} ${css.lugrasimoBold}`}>{title}</h2>} */}
       {/* //! CSS-модулі з composes */}
-      {title && <h2 className={css.titleLugrasimoBold}>{title}</h2>}
+      {/* {title && <h2 className={css.titleLugrasimoBold}>{title}</h2>} */}
+      {/* //! Emotion */}
+      {title && <Title>{title}</Title>}
       {children}
     </section>
   );
