@@ -17,6 +17,9 @@ export const PlanesItem = styled.li`
     padding: 10px;
     background-color: #ffdb92;
     outline: 1px solid grey;
+    background-color: ${({ year }) => {
+    console.log("@emotion/styled_year:", year); //
+    }};
 `;
 
 /** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */

@@ -17,7 +17,7 @@ export function PlanesList({ items }) {
         {/* <ul className={css.planesList}> */}
             {items.map(item => 
                 //! Emotion
-                <PlanesItem key={item.id}>
+                <PlanesItem key={item.id} year={item.info.year}>
                 {/*//! CSS-модулі */}
                 {/* <li
                     //todo: var.1 та var.2
