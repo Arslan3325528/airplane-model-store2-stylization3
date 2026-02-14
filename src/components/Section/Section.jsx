@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 // import css from "./Section.module.css"; //! CSS-модулі
-import { Title } from './Section.styled'; //! Emotion
+import { TitleLugrasimoBold } from './Section.styled'; //! Emotion
 
 
 export function Section({ title, children }) {
@@ -16,7 +16,7 @@ export function Section({ title, children }) {
       {/* //! CSS-модулі з composes */}
       {/* {title && <h2 className={css.titleLugrasimoBold}>{title}</h2>} */}
       {/* //! Emotion */}
-      {title && <Title>{title}</Title>}
+      {title && <TitleLugrasimoBold>{title}</TitleLugrasimoBold>}
       {children}
     </section>
   );

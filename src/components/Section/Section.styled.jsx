@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 
 
-export const Title = styled.h2`
-/* .lugrasimoBold */
+export const TitleLugrasimoBold = styled.h2`
+/*//todo: .lugrasimoBold */
     font-family: "Lugrasimo", cursive;
     font-weight: 700;
     font-style: normal;
-/* .title */
+/*//todo: .title */
     margin-bottom: 24px;
     font-size: 48px;
     text-align: center;
