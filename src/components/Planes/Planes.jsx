@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
 
 import css from "./Planes.module.css"; //! CSS-модулі
+// import { } from './Planes.styled'; //! Emotion
+
+// import defaultImage from "../default.jpg"; //! Дефолтне зображення
+import defaultImage from "@/components/default.jpg"; //! Дефолтне зображення --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
 
 //! Бібліотека react-icons
-import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from 'react-icons/fa'; //! Приклад react-icons
 import { AiOutlineFlag, AiOutlineInfoCircle, AiOutlineClockCircle, AiOutlineDollarCircle } from "react-icons/ai";
 import { GiArmoredBoomerang, GiCeremonialMask, GiAirplaneDeparture, GiCommercialAirplane, GiCurlyMask } from "react-icons/gi";
 import { CiBadgeDollar, CiGlobe, CiAirportSign1 } from "react-icons/ci";
@@ -21,9 +24,6 @@ import { FcTrademark } from "react-icons/fc";
 //? <GiAirplaneDeparture /> - Рекламна модель
 //? <CiAirportSign1 /> - Реальна модель
 
-// import defaultImage from "../default.jpg"; //! Дефолтне зображення
-import defaultImage from "@/components/default.jpg"; //! Дефолтне зображення --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
-
 //! Для розрахунку тривалості виробництва
 // import { getManufacturingYears } from '@/utils/formatDateDuration.js';
 //! Реекспорт - декілька імпортів з однієї папки
@@ -33,10 +33,6 @@ import {
   getBgColorCSSModule,
   getManufacturingYears //! Для розрахунку тривалості виробництва
 } from '@/utils'; 
-
-console.log("1️⃣getBgColorBuiltInStyles(1951):", getBgColorBuiltInStyles(1951));
-console.log("2️⃣getBgColorVanillaCSS(1951):", getBgColorVanillaCSS(1951));
-console.log("3️⃣getBgColorCSSModule(1951):", getBgColorCSSModule(1951));
 
 //! Константи для розмірів іконок
 import { iconSize } from '@/constants';
@@ -65,11 +61,6 @@ export function Planes({
   // console.log("duration", duration); //!
   return (
     <>
-      {/* //! Приклад react-icons */}
-      {/* <FaMapMarkerAlt />
-      <FaUserAlt />
-      <FaCalendarAlt />
-      <FaClock /> */}
       <h3 className={css.planeTitle}>{nameBrief}</h3>
       <img src={urlMain} alt={nameBrief} />
       {/* <p className="textField">Повна назва: <span className="textFieldValue boldStyle">{nameFull}</span></p> */}

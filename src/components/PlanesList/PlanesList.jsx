@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-import css from "./PlanesList.module.css"; //! CSS-модулі
+// import css from "./PlanesList.module.css"; //! CSS-модулі
 import { PlanesGallery, PlanesItem } from './PlanesList.styled'; //! Emotion
 
-// import { Planes } from '../Planes/Planes.jsx'; //! CSS-модулі
-import { Planes } from '@/components/Planes/Planes.jsx'; //! CSS-модулі --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
+// import { Planes } from '../Planes/Planes.jsx'; //! CSS-модулі + Emotion
+import { Planes } from '@/components/Planes/Planes.jsx'; //! CSS-модулі + Emotion --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
 
 // import { getBgColorBuiltInStyles, getBgColorVanillaCSS, getBgColorCSSModule } from '../../utils/getBackgroundColor.js'; //! вбудовані стилі + ванільний CSS
-import { getBgColorBuiltInStyles, getBgColorVanillaCSS, getBgColorCSSModule } from '@/utils/getBackgroundColor.js'; //! вбудовані стилі + ванільний CSS + CSS-модулі --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
+// import { getBgColorBuiltInStyles, getBgColorVanillaCSS, getBgColorCSSModule } from '@/utils/getBackgroundColor.js'; //! вбудовані стилі + ванільний CSS + CSS-модулі --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
 
 export function PlanesList({ items }) {
     return (
