@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
+
 // import css from "./Section.module.css"; //! CSS-модулі
 import { Title } from './Section.styled'; //! Emotion
+
 
 export function Section({ title, children }) {
   //! Перевірка режимів: development або prodaction
