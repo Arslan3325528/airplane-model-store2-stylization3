@@ -1,5 +1,8 @@
 import styled from '@emotion/styled';
 
+export const Global = styled.section`
+    display: grid;
+`;
 
 export const TitleLugrasimoBold = styled.h2`
 /*//todo: .lugrasimoBold */
