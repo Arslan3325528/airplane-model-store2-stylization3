@@ -24,8 +24,8 @@ export const PlanesGallery = styled.ul`
     font-style: italic;
 }
 
-/*todo: Використання властивості composes */
-/*todo: додатково: */
+/*//todo: Використання властивості composes */
+/*//todo: додатково: */
 .boldStyle {
     composes: textFieldValue;
     font-family: 'Trebuchet MS', Arial, sans-serif;
