@@ -75,9 +75,14 @@ export const PlaneButton = styled.button`
     font-weight: 700;
     font-size: 1.5rem;
     border-radius: 12px;
-    color: #ffffff;
+    color: #99ffff;
     cursor: pointer;
     background-color: #008080;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9);
+
+    :hover {
+        color: #d9d902;
+        background-color: #902a00;
+    }
 `;
