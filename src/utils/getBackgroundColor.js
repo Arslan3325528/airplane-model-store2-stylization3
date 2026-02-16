@@ -66,11 +66,20 @@ export function getBgColorCSSModule(year) {
 // _____________________________________________________
 
 
-//todo: Emotion
-export function getBgColorEmotion({ year }) {
+// //todo: Emotion
+// export function getBgColorEmotion({ year }) {
+//     // console.log("@emotion/styled_year:", year); //!
+//     let bgColor = '#ffdb92';
+//     if (year > 1945) bgColor = '#d2fdbd';
+//     if (year > 1999) bgColor = '#d6f1ff';
+//     return bgColor;
+// };
+
+//todo: Emotion Theme
+export function getBgColorEmotion({ year, theme }) {
     // console.log("@emotion/styled_year:", year); //!
-    let bgColor = '#ffdb92';
-    if (year > 1945) bgColor = '#d2fdbd';
-    if (year > 1999) bgColor = '#d6f1ff';
+    let bgColor = theme.bgColors.old;
+    if (year > 1945) bgColor = theme.bgColors.last;
+    if (year > 1999) bgColor = theme.bgColors.now;
     return bgColor;
 };
