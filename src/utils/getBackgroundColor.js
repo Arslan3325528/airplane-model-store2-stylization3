@@ -78,8 +78,8 @@ export function getBgColorCSSModule(year) {
 //todo: Emotion Theme
 export function getBgColorEmotion({ year, theme }) {
     // console.log("@emotion/styled_year:", year); //!
-    let bgColor = theme.bgColors.old;
-    if (year > 1945) bgColor = theme.bgColors.last;
-    if (year > 1999) bgColor = theme.bgColors.now;
+    let bgColor = theme.bсgColor.old;
+    if (year > 1945) bgColor = theme.bсgColor.last;
+    if (year > 1999) bgColor = theme.bсgColor.now;
     return bgColor;
 };

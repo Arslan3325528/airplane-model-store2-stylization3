@@ -7,10 +7,14 @@ export const PlaneTitle = styled.h3`
     padding: 12px 16px;
     font-size: 32px;
     text-align: center;
-    border: 1px solid #9b9b00;
+    /* border: 1px solid #9b9b00; */
+    border: ${props => `1px solid ${props.theme.borderColor.planeTitle}`};
     border-radius: 8px;
-    background-color: yellow;
-    color: blue;
+    /* color: #0000ff; */
+    color: ${props => props.theme.fontColor.planeTitleImageTitles};
+    /* background-color: #ffff00; */
+    background-color: ${props => props.theme.bсgColor.planeTitle};
+    
 `;
 
 export const TextField = styled.p`
@@ -19,7 +23,8 @@ export const TextField = styled.p`
     /*//todo: Налаштування для іконок */
     svg {
         margin-bottom: -8px;
-        color: #9b25fc;
+        /* color: #9b25fc; */
+        color: ${props => props.theme.iconColor.textField};
     }
 `;
 
@@ -37,14 +42,16 @@ export const TextFieldValueBoldStyle = styled.span`
     font-style: italic;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 1.1em;
-    color: #0b5500;
+    /* color: #0b5500; */
+    color: ${props => props.theme.fontColor.nameFullTitle};
     font-weight: 700;
 `;
 
 export const ImageTitles = styled.h4`
     text-align: center;
     vertical-align: bottom;
-    color: blue;
+    /* color: #0000ff; */
+    color: ${props => props.theme.fontColor.planeTitleImageTitles};
     /*//todo: Налаштування для іконок */
     svg {
         margin-bottom: -10px;
@@ -57,7 +64,8 @@ export const ActualImageBox = styled.div`
     flex-wrap: wrap;
     padding: 8px;
     border-radius: 8px;
-    background-color: gray;
+    /* background-color: #808080; */
+    background-color: ${props => props.theme.bсgColor.actualImageBox};
 `;
 
 export const ActualImage = styled.img`
@@ -75,14 +83,18 @@ export const PlaneButton = styled.button`
     font-weight: 700;
     font-size: 1.5rem;
     border-radius: 12px;
-    color: #99ffff;
+    /* color: #99ffff; */
+    color: ${props => props.theme.buttonColor.planeButton};
     cursor: pointer;
-    background-color: #008080;
+    /* background-color: #008080; */
+    background-color: ${props => props.theme.bсgColor.planeButton};
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9);
 
     :hover {
-        color: #d9d902;
-        background-color: #902a00;
+        /* color: #d9d902; */
+        color: ${props => props.theme.buttonColor.planeButtonHover};
+        /* background-color: #902a00; */
+        background-color: ${props => props.theme.bсgColor.planeButtonHover};
     }
 `;
