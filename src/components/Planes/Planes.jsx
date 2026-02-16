@@ -6,8 +6,10 @@ import {
   PlaneTitle,
   TextField,
   TextFieldValue,
-  TextFieldValueBoldStyle
-  
+  TextFieldValueBoldStyle,
+  ImageTitles,
+  ActualImageBox,
+  ActualImage,
 } from './Planes.styled'; 
 
 // import defaultImage from "../default.jpg"; //! Дефолтне зображення
@@ -111,19 +113,20 @@ export function Planes({
       <TextField><AiOutlineDollarCircle size={iconSize.md} /> Ціна: <TextFieldValue>{price}</TextFieldValue></TextField>
       <TextField><AiOutlineInfoCircle size={iconSize.md} /> Опис: <TextFieldValue>{description}</TextFieldValue></TextField>
       {/*//! заголовок зображень */}
-      <h4><GiAirplaneDeparture size={iconSize.lg} /> Рекламна модель:</h4>
+      <ImageTitles><GiAirplaneDeparture size={iconSize.lg} /> Рекламна модель:</ImageTitles>
       <img src={urlPromotional} alt={nameBrief} />
       {/*//! заголовок зображень */}
-      <h4><CiAirportSign1 size={iconSize.lg} /> Реальна модель:</h4>
-      <div>
+      <ImageTitles><CiAirportSign1 size={iconSize.lg} /> Реальна модель:</ImageTitles>
+      <ActualImageBox>
         {urlActual.map(item =>
-          <img
+          <ActualImage
             key={item} //* вже унікальний 
             src={item}
             alt={nameBrief}
-          />
+          >
+          </ActualImage >
         )}
-      </div>
+      </ActualImageBox>
       <button
         type="button"
       >

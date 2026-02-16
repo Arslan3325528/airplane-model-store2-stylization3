@@ -16,11 +16,20 @@ export const PlaneTitle = styled.h3`
 export const TextField = styled.p`
     font-size: 18px;
     font-weight: 700;
+    /*//todo: Налаштування для іконок */
+    svg {
+        margin-bottom: -8px;
+        color: #9b25fc;
+    }
 `;
 
 export const TextFieldValue = styled.span`
     font-weight: 400;
     font-style: italic;
+    /*//todo: Налаштування для іконок */
+    svg {
+        margin-bottom: -8px;
+    }
 `;
 
 export const TextFieldValueBoldStyle = styled.span`
@@ -32,37 +41,29 @@ export const TextFieldValueBoldStyle = styled.span`
     font-weight: 700;
 `;
 
-// .imageTitles {
-//     text-align: center;
-//     vertical-align: bottom;
-//     color: blue;
-// }
+export const ImageTitles = styled.h4`
+    text-align: center;
+    vertical-align: bottom;
+    color: blue;
+    /*//todo: Налаштування для іконок */
+    svg {
+        margin-bottom: -10px;
+    }
+`;
 
-// /*/*todo: Налаштування для іконок */
-// .icon {
-//     margin-bottom: -8px;
-//     color: #9b25fc;
-// }
+export const ActualImageBox = styled.div`
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: gray;
+`;
 
-// .iconImageTitles {
-//     margin-bottom: -10px;
-// }
-
-// .actualImageBox {
-//     /* min-height: 418px;  */
-//     /*todo: додатково: */
-//     display: flex;
-//     gap: 10px;
-//     flex-wrap: wrap;
-//     padding: 8px;
-//     border-radius: 8px;
-//     background-color: gray;
-// }
-
-// .actualImage {
-//     max-width: calc((100% - 10px) / 2);
-//     border-radius: 4px;
-// }
+export const ActualImage = styled.img`
+    max-width: calc((100% - 10px) / 2);
+    border-radius: 4px;
+`;
 
 // .planeButton {
 //     width: 70%;
