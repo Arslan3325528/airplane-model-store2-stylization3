@@ -10,6 +10,7 @@ import {
   ImageTitles,
   ActualImageBox,
   ActualImage,
+  PlaneButton
 } from './Planes.styled'; 
 
 // import defaultImage from "../default.jpg"; //! Дефолтне зображення
@@ -123,15 +124,13 @@ export function Planes({
             key={item} //* вже унікальний 
             src={item}
             alt={nameBrief}
-          >
-          </ActualImage >
+          />
         )}
       </ActualImageBox>
-      <button
-        type="button"
-      >
+      <PlaneButton
+        type="button">
         Додати до кошику
-      </button>
+      </PlaneButton>
     </>
   );
 };
@@ -148,7 +147,6 @@ Planes.propTypes = {
   country: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  // price: PropTypes.number.isRequired,  //! контроль propTypes
   description: PropTypes.string.isRequired,
   manufacturingStart: PropTypes.string.isRequired,
   manufacturingEnd: PropTypes.string.isRequired

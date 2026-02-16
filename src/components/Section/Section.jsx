@@ -22,7 +22,7 @@ export function Section({ title, children }) {
       {/* </section> */}
     </Global>
   );
-}
+};
 
 Section.propTypes = {
   title: PropTypes.string,

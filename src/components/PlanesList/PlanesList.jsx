@@ -9,6 +9,7 @@ import { Planes } from '@/components/Planes/Planes.jsx'; //! CSS-модулі + 
 // import { getBgColorBuiltInStyles, getBgColorVanillaCSS, getBgColorCSSModule } from '../../utils/getBackgroundColor.js'; //! вбудовані стилі + ванільний CSS
 // import { getBgColorBuiltInStyles, getBgColorVanillaCSS, getBgColorCSSModule } from '@/utils/getBackgroundColor.js'; //! вбудовані стилі + ванільний CSS + CSS-модулі --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
 
+
 export function PlanesList({ items }) {
     return (
         //! Emotion
