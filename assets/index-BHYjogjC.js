@@ -37,8 +37,9 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
     padding: 10px;
     /* background-color: #ffdb92; */
 
-    ${n=>console.log("props:",n)} //!
-    
+    /*//! Пропси від: <PlanesItem key={item.id} yearOfManufacture={item.info.year}>*/
+    ${n=>console.log("props:",n)}
+
     //todo: var.1
     /* background-color: ${({yearOfManufacture:n})=>{let c="#ffdb92";return n>1945&&(c="#d2fdbd"),n>1999&&(c="#d6f1ff"),c}}; */
     //todo: var.2
