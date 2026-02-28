@@ -22,11 +22,11 @@ export const PlanesGallery = styled.ul`
 //todo: backgroundColor: '#d6f1ff', ---> "year" від 2000  */
 //! Функція для зміни кольору фону
 //todo: var.2
-// function getBgColorEmotion({ year }) {
-//     // console.log("@emotion/styled_year:", year); //!
+// function getBgColorEmotion({ yearOfManufacture }) {
+//     // console.log("@emotion/styled_yearOfManufacture:", yearOfManufacture); //!
 //     let bgColor = '#ffdb92';
-//     if (year > 1945) bgColor = '#d2fdbd';
-//     if (year > 1999) bgColor = '#d6f1ff';
+//     if (yearOfManufacture > 1945) bgColor = '#d2fdbd';
+//     if (yearOfManufacture > 1999) bgColor = '#d6f1ff';
 //     return bgColor;
 // };
 
@@ -35,12 +35,15 @@ export const PlanesItem = styled.li`
     gap: 12px;
     padding: 10px;
     /* background-color: #ffdb92; */
+
+    ${(props) => console.log("props:", props)} //!
+    
     //todo: var.1
-    /* background-color: ${({ year }) => {
-        // console.log("@emotion/styled_year:", year); //!
+    /* background-color: ${({ yearOfManufacture }) => {
+        // console.log("@emotion/styled_yearOfManufacture:", yearOfManufacture); //!
         let bgColor = '#ffdb92';
-        if (year > 1945) bgColor = '#d2fdbd';
-        if (year > 1999) bgColor = '#d6f1ff';
+        if (yearOfManufacture > 1945) bgColor = '#d2fdbd';
+        if (yearOfManufacture > 1999) bgColor = '#d6f1ff';
         return bgColor;
     }}; */
     //todo: var.2
