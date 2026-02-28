@@ -20,10 +20,13 @@ export const PlaneTitle = styled.h3`
 `;
 
 export const TextField = styled.p`
+    display: flex;
+    gap:5px;
     font-size: 18px;
     font-weight: 700;
     /*//todo: Налаштування для іконок */
     svg {
+        min-width: 28px;
         margin-bottom: -8px;
         /* color: #9b25fc; */
         color: ${props => props.theme.iconColor.textField};
@@ -33,10 +36,6 @@ export const TextField = styled.p`
 export const TextFieldValue = styled.span`
     font-weight: 400;
     font-style: italic;
-    /*//todo: Налаштування для іконок */
-    svg {
-        margin-bottom: -8px;
-    }
 `;
 
 export const TextFieldValueBoldStyle = styled.span`
