@@ -4,6 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@emotion/react'; //! Emotion Theme
 import { theme } from '@/constants'; //! Emotion Theme
 
+// const theme = {
+//   fontColor: {
+//     mainTitle: '#b25501',
+//     planeTitleImageTitles: '#0000ff',
+//     nameFullTitle: '#0b5500',
+//   }
+// };
+
 import './index.css';
 
 // import { App } from './components/App/App.jsx'; //! CSS-модулі

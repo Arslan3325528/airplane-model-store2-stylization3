@@ -36,8 +36,9 @@ export const PlanesItem = styled.li`
     padding: 10px;
     /* background-color: #ffdb92; */
 
-    ${(props) => console.log("props:", props)} //!
-    
+    /*//! Пропси від: <PlanesItem key={item.id} yearOfManufacture={item.info.year}>*/
+    ${(props) => console.log("props:", props)}
+
     //todo: var.1
     /* background-color: ${({ yearOfManufacture }) => {
         // console.log("@emotion/styled_yearOfManufacture:", yearOfManufacture); //!

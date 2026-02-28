@@ -12,7 +12,6 @@ export const theme = Object.freeze({
     actualImageBox: '#808080',
     planeButton: '#008080',
     planeButtonHover: '#902a00',
-    
   },
   borderColor: {
     planeTitle: '#9b9b00',
@@ -27,4 +26,5 @@ export const theme = Object.freeze({
   //! Налаштування відступів - spacing
   spacing: value => `${4 * value}px`,
 });
+
 
