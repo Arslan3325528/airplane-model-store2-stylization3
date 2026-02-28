@@ -26,7 +26,8 @@ export const TextField = styled.p`
     font-weight: 700;
     /*//todo: Налаштування для іконок */
     svg {
-        min-width: 28px;
+        /* min-width: 28px; */
+        min-width: ${props => props.theme.iconSize.md}px;
         margin-bottom: -8px;
         /* color: #9b25fc; */
         color: ${props => props.theme.iconColor.textField};

@@ -1,3 +1,6 @@
+// import { iconSize } from '@/constants'; //! абсолютний шлях + Реекспорт
+import { iconSize } from './iconSize.js'; //! відносний шлях 
+
 export const theme = Object.freeze({
   fontColor: {
     mainTitle: '#b25501',
@@ -23,6 +26,9 @@ export const theme = Object.freeze({
     planeButton: '#99ffff',
     planeButtonHover: '#d9d902',
   },
+  //! Додаємо об'єкт з розмірами іконок
+  // iconSize: iconSize,
+  iconSize, //? Короткі властивості об'єкта
   //! Налаштування відступів - spacing
   spacing: value => `${4 * value}px`,
 });
