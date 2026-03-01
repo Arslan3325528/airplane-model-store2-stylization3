@@ -10,7 +10,7 @@ export function Section({ title, children }) {
   return (
     <Global>
       {/* <section> */}
-        {/* //! //! CSS-модулі  */}
+        {/* //! //! Ванільний CSS */}
         {/* {title && <h2 className="title">{title}</h2>} */}
         {/* //! CSS-модулі з композицією класів */}
         {/* {title && <h2 className={`${css.title} ${css.lugrasimoBold}`}>{title}</h2>} */}
