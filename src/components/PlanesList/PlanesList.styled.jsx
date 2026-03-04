@@ -3,6 +3,11 @@ import styled from '@emotion/styled';
 //! Функція для зміни кольору фону
 import { getBgColorEmotion } from '@/utils/getBackgroundColor.js'; //todo: var.3
 
+// function getProps(props) {
+//     console.log("getProps_props:", props);
+//     console.log("getProps_props.children.props.year:", props.children.props.year);
+// };
+// getProps();
 
 export const PlanesGallery = styled.ul`
     width: 99vw;
@@ -37,8 +42,7 @@ export const PlanesItem = styled.li`
     /* background-color: #ffdb92; */
 
     /*//! Пропси від: <PlanesItem key={item.id} yearOfManufacture={item.info.year}>*/
-    /* ${(props) => console.log("props:", props)} */
-    ${(props) => console.log("props.children.props.year:", props.children.props.year)}
+    
 
     //todo: var.1
     /* background-color: ${({ yearOfManufacture }) => {
@@ -52,3 +56,6 @@ export const PlanesItem = styled.li`
     background-color: ${getBgColorEmotion};
     outline: 1px solid grey;
 `;
+
+// ${ (props) => console.log("props:", props) }
+// ${ (props) => console.log("props.children.props.year:", props.children.props.year) }
