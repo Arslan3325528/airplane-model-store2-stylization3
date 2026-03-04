@@ -67,11 +67,11 @@ export function getBgColorCSSModule(year) {
 
 
 // //todo: Emotion
-// export function getBgColorEmotion({ year }) {
+// export function getBgColorEmotion({ yearOfManufacture }) {
 //     // console.log("@emotion/styled_year:", year); //!
 //     let bgColor = '#ffdb92';
-//     if (year > 1945) bgColor = '#d2fdbd';
-//     if (year > 1999) bgColor = '#d6f1ff';
+//     if (yearOfManufacture > 1945) bgColor = '#d2fdbd';
+//     if (yearOfManufacture > 1999) bgColor = '#d6f1ff';
 //     return bgColor;
 // };
 
