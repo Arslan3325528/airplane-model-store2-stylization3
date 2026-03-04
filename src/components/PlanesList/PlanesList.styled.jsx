@@ -37,7 +37,8 @@ export const PlanesItem = styled.li`
     /* background-color: #ffdb92; */
 
     /*//! Пропси від: <PlanesItem key={item.id} yearOfManufacture={item.info.year}>*/
-    ${(props) => console.log("props:", props)}
+    /* ${(props) => console.log("props:", props)} */
+    ${(props) => console.log("props.children.props.year:", props.children.props.year)}
 
     //todo: var.1
     /* background-color: ${({ yearOfManufacture }) => {
