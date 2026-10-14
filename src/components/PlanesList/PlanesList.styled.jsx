@@ -14,6 +14,9 @@ export const PlanesGallery = styled.ul`
     grid-template-columns: repeat(auto-fit, minmax(540px, auto));
     gap: 32px;
     outline: 1px solid red;
+
+    /*//! Пропси від items */
+    ${(props) => console.log("props.children[0].props.children.props.year_PlanesGallery:", props.children[0].props.children.props.year)}
 `;
 
 
@@ -37,7 +40,7 @@ export const PlanesItem = styled.li`
     /* background-color: #ffdb92; */
 
     /*//! Пропси від: <PlanesItem key={item.id} yearOfManufacture={item.info.year}>*/
-    ${ (props) => console.log("props:", props)}
+    ${(props) => console.log("props:", props)}
     ${(props) => console.log("props.children.props.year:", props.children.props.year)}
 
     //todo: var.1
