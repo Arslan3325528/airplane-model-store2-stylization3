@@ -30,6 +30,7 @@ export const theme = Object.freeze({
   // iconSize: iconSize,
   iconSize, //? Короткі властивості об'єкта
   //! Налаштування відступів - spacing
+  // spacing: 4,
   spacing: value => `${4 * value}px`,
 });
 
