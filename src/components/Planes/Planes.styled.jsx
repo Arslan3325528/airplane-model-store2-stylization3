@@ -59,6 +59,10 @@ export const ImageTitles = styled.h4`
     /*//todo: Налаштування для іконок */
     svg {
         margin-bottom: -10px;
+        margin-right: 4px;
+        width: ${props => props.theme.iconSize.lg}px;
+        height: ${props => props.theme.iconSize.lg}px;
+        /* outline: 1px solid red; */
     }
 `;
 

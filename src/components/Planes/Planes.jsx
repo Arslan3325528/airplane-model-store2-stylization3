@@ -114,10 +114,20 @@ export function Planes({
       <TextField><AiOutlineDollarCircle size={iconSize.md} /> Ціна: <TextFieldValue>{price}</TextFieldValue></TextField>
       <TextField><AiOutlineInfoCircle size={iconSize.md} /> Опис: <TextFieldValue>{description}</TextFieldValue></TextField>
       {/*//! заголовок зображень */}
-      <ImageTitles><GiAirplaneDeparture size={iconSize.lg} /> Рекламна модель:</ImageTitles>
+      <ImageTitles>
+        <GiAirplaneDeparture
+          size={iconSize.lg}
+        />
+        Рекламна модель:
+      </ImageTitles>
       <img src={urlPromotional} alt={nameBrief} />
       {/*//! заголовок зображень */}
-      <ImageTitles><CiAirportSign1 size={iconSize.lg} /> Реальна модель:</ImageTitles>
+      <ImageTitles>
+        <CiAirportSign1
+          // size={iconSize.lg}
+        />
+        Реальна модель:
+      </ImageTitles>
       <ActualImageBox>
         {urlActual.map(item =>
           <ActualImage
